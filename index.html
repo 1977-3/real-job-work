@@ -2,22 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Congratulations Calto!</title>
+    <title>Calto Zeagben's Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-            background-color: #f0f8ff; /* Light blue background */
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 20%;
-            color: #333;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h1 {
-            font-size: 2.5em;
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #34495e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 60px;
+        }
+
+        a.email-link {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        a.email-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .container {
+                margin: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>You did it, Calto Zeagben!</h1>
-    <p>You created your first website 🎉</p>
+
+<header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+    <section id="home">
+        <h1>Welcome, Calto Zeagben!</h1>
+        <p>You did it! This is your first advanced website. It has a structured layout, navigation, and it's ready to grow with your creativity.</p>
+    </section>
+
+    <section id="about">
+        <h2>About This Site</h2>
+        <p>This is a clean, responsive HTML and CSS layout. It's simple to expand with more pages, styles, or even JavaScript for dynamic behavior. You can use this template as the foundation for a personal portfolio, blog, or project site.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me via email at 
+            <a href="mailto:nyankeneken@gmail.com" class="email-link">nyankeneken@gmail.com</a>.
+        </p>
+    </section>
+</main>
+
+<footer>
+    &copy; 2025 Calto Zeagben. All rights reserved.
+</footer>
+
 </body>
 </html>
